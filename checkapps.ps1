@@ -8,16 +8,6 @@ if (Test-Path $anydeskExePath) {
     Write-Output y|winget install --id anydesk.anydesk
 }
 
-# ESET
-$EsetExePath = "C:\Program Files\ESET\ESET Security\ecmds.exe"
-
-if (Test-Path $EsetExePath) {
-    Write-Host "Eset is installed."
-} else {
-    Write-Host "Eset is not installed"
-    Write-Output y|winget install --id ESET.EndpointSecurity --silent
-}
-
 # Chrome
 
 $ChromeExePath = "C:\Program Files\Google\Chrome\Application\chrome.exe"
