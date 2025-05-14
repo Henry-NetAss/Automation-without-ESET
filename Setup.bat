@@ -12,32 +12,33 @@ powercfg -change -monitor-timeout-dc 10
 powercfg -change -standby-timeout-dc 30
 powercfg -change -hibernate-timeout-dc 30
 powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force}"
-powershell.exe -WindowStyle Hidden c:\na\installation\website.ps1
-powershell.exe -WindowStyle Hidden c:\na\installation\winget_enable.ps1
-powershell.exe -WindowStyle Hidden c:\na\installation\VisualFX.ps1
-powershell.exe -WindowStyle Hidden C:\NA\Installation\UAC_Disable.ps1
-powershell.exe -WindowStyle Hidden C:\NA\Installation\DarkMode.ps1
-powershell.exe -WindowStyle Hidden C:\NA\Installation\Region_Settings.ps1
-powershell.exe -WindowStyle Hidden C:\NA\Installation\Disable_Fast_Boot.ps1
-powershell.exe -WindowStyle Hidden C:\NA\Installation\RemoveCapabilities.ps1
-powershell.exe -WindowStyle Hidden C:\NA\Installation\Removefeatures.ps1
-powershell.exe -WindowStyle Hidden C:\NA\Installation\RemovePackages.ps1
+powershell.exe c:\na\installation\website.ps1
+powershell.exe c:\na\installation\winget_enable.ps1
+powershell.exe c:\na\installation\VisualFX.ps1
+powershell.exe C:\NA\Installation\UAC_Disable.ps1
+powershell.exe C:\NA\Installation\DarkMode.ps1
+powershell.exe C:\NA\Installation\Region_Settings.ps1
+powershell.exe C:\NA\Installation\Disable_Fast_Boot.ps1
+powershell.exe C:\NA\Installation\RemoveCapabilities.ps1
+powershell.exe C:\NA\Installation\Removefeatures.ps1
+powershell.exe C:\NA\Installation\RemovePackages.ps1
 powershell.exe -WindowStyle Hidden C:\NA\Installation\UserOnce.ps1
 tzutil /s "South Africa Standard Time" 
-powershell.exe -WindowStyle Hidden C:\NA\Installation\software.ps1
+powershell.exe C:\NA\Installation\software.ps1
 timeout 5
-powershell.exe -WindowStyle Hidden C:\NA\Installation\Anydesksilent.ps1
+powershell.exe :\NA\Installation\Anydesksilent.ps1
 cls
-powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force}"
-powershell.exe -WindowStyle Hidden c:\na\Installation\Desktop_Shortcuts.ps1
 timeout 5
 powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force}"
-powershell.exe -WindowStyle Hidden C:\NA\Installation\remove_printers.ps1
+powershell.exe C:\NA\Installation\remove_printers.ps1
 cls
-powershell.exe -WindowStyle Hidden C:\NA\Installation\NIC_Power_Management.ps1
+powershell.exe C:\NA\Installation\NIC_Power_Management.ps1
 timeout 20
 cls
 powershell.exe c:\Na\Installation\checkapps.ps1
 timeout 50
-powershell.exe -WindowStyle Hidden C:\NA\Installation\updates.ps1
+powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force}"
+powershell.exe c:\na\Installation\Desktop_Shortcuts.ps1
+timeout 5
+powershell.exe C:\NA\Installation\updates.ps1
 exit
