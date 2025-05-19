@@ -22,7 +22,7 @@ powershell.exe C:\NA\Installation\Disable_Fast_Boot.ps1
 powershell.exe C:\NA\Installation\RemoveCapabilities.ps1
 powershell.exe C:\NA\Installation\Removefeatures.ps1
 powershell.exe C:\NA\Installation\RemovePackages.ps1
-powershell.exe -WindowStyle Hidden C:\NA\Installation\UserOnce.ps1
+powershell.exe C:\NA\Installation\UserOnce.ps1
 tzutil /s "South Africa Standard Time" 
 powershell.exe C:\NA\Installation\software.ps1
 timeout 5
