@@ -13,6 +13,7 @@ $taskbar_layout =
         <taskbar:DesktopApp DesktopApplicationLinkPath="C:\Program Files (x86)\AnyDesk\AnyDesk.exe" />
         <taskbar:DesktopApp DesktopApplicationLinkPath="C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" />
         <taskbar:DesktopApp DesktopApplicationLinkPath="C:\Program Files\Google\Chrome\Application\chrome.exe" />
+        <taskbar:DesktopApp DesktopApplicationLinkPath="C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE" />
         <taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer" />
       </taskbar:TaskbarPinList>
     </defaultlayout:TaskbarLayout>
