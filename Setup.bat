@@ -34,12 +34,11 @@ powershell.exe C:\NA\Installation\remove_printers.ps1
 cls
 powershell.exe C:\NA\Installation\NIC_Power_Management.ps1
 timeout 20
-powershell.exe c:\na\installation\taskbaricons.ps1
-cls
 powershell.exe c:\Na\Installation\checkapps.ps1
 timeout 50
 powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force}"
 powershell.exe c:\na\Installation\Desktop_Shortcuts.ps1
+powershell.exe c:\na\installation\taskbaricons.ps1
 timeout 5
 powershell.exe C:\NA\Installation\updates.ps1
 exit
