@@ -41,4 +41,9 @@ powershell.exe c:\na\Installation\Desktop_Shortcuts.ps1
 powershell.exe c:\na\installation\taskbaricons.ps1
 timeout 5
 powershell.exe C:\NA\Installation\updates.ps1
+timeout 10
+powershell.exe C:\na\Installation\RequestPCName.ps1
+timeout 5
+Powershell.exe c:\na\installation\PCName.ps1
+shutdown /r 
 exit

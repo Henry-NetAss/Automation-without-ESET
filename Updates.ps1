@@ -14,7 +14,7 @@ Function InstallWindowsUpdates
 {
     Get-WindowsUpdate | Out-File C:\AutoUpdates\History\Updates_"$((Get-Date).ToString('dd-MM-yyyy_HH.mm.ss'))".txt
 
-    Install-WindowsUpdate -Install -AcceptAll -AutoReboot
+    Install-WindowsUpdate -Install -AcceptAll
 }
 
 
