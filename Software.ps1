@@ -51,4 +51,4 @@ send-osnotification -body 'Whatsapp' -Title 'Network Associates'
 echo y|winget install --id 9NKSQGP7F2NH --silent
 send-osnotification -body 'Microsoft Office' -Title 'Network Associates'
 echo y|winget install --id Microsoft.Office --silent
-start-sleep -seconds 5
+start-sleep -seconds 4
