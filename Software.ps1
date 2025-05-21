@@ -28,7 +28,7 @@ echo y|winget install --id EclipseAdoptium.Temurin.11.JDK --silent
 start-sleep -seconds 15
 Clear-Host
 send-osnotification -body 'Downloading Google Chrome' -Title 'Network Associates'
-echo y|winget install --id Google.Chrome.EXE --silent
+echo y|winget install --id Google.Chrome.EXE --location "C:\Program Files\Google" --silent
 start-sleep -seconds 5
 Clear-Host
 send-osnotification -body 'Downloading TS Print' -Title 'Network Associates'
