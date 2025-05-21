@@ -1,4 +1,6 @@
 cd c:\NA\Installation
+powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force}"
+powershell.exe C:\na\Installation\RequestPCName.ps1
 powercfg -setdcvalueindex SCHEME_CURRENT 4f971e89-eebd-4455-a8de-9e59040e7347 5ca83367-6e45-459f-a27b-476b1d01c936 2
 powercfg -setacvalueindex SCHEME_CURRENT 4f971e89-eebd-4455-a8de-9e59040e7347 5ca83367-6e45-459f-a27b-476b1d01c936 2
 powercfg -setdcvalueindex SCHEME_CURRENT 4f971e89-eebd-4455-a8de-9e59040e7347 7648efa3-dd9c-4e3e-b566-50f929386280 2
@@ -42,7 +44,7 @@ powershell.exe c:\na\installation\taskbaricons.ps1
 timeout 5
 powershell.exe C:\NA\Installation\updates.ps1
 timeout 10
-powershell.exe C:\na\Installation\RequestPCName.ps1
+
 timeout 5
 Powershell.exe c:\na\installation\PCName.ps1
 shutdown /r 
