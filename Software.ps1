@@ -29,7 +29,7 @@ start-sleep -seconds 15
 Clear-Host
 send-osnotification -body 'Downloading Google Chrome' -Title 'Network Associates'
 mkdir "c:\program files\Google"
-echo y|winget install --id Google.Chrome.EXE --location "C:\Program Files\Google"
+echo y|winget install --id Google.Chrome --location "C:\Program Files\Google"
 start-sleep -seconds 5
 Clear-Host
 send-osnotification -body 'Downloading TS Print' -Title 'Network Associates'
