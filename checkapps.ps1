@@ -20,7 +20,7 @@ if (Test-Path $ChromeExePath) {
     if (test-path $chromeexepath1) {
         write-host "Chrome is installed"
     } else { write-host "Chrome is not inistalled"
-            write-output y|winget install --id Google.Chrome.EXE --silent
+            write-output y|winget install --id Google.Chrome --Location "C:\Program Files\Google"
         }
     }
 
