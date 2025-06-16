@@ -14,7 +14,6 @@ powercfg -change -monitor-timeout-dc 10
 powercfg -change -standby-timeout-dc 30
 powercfg -change -hibernate-timeout-dc 30
 powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force}"
-powershell.exe c:\na\installation\website.ps1
 powershell.exe c:\na\installation\winget_enable.ps1
 powershell.exe c:\na\installation\VisualFX.ps1
 powershell.exe C:\NA\Installation\UAC_Disable.ps1
