@@ -39,11 +39,7 @@ echo y|winget install --id Google.Chrome.EXE --location "C:\Program Files\Google
 start-sleep -seconds 5
 Clear-Host
 send-osnotification -body 'Downloading TS Print' -Title 'Network Associates'
-$source = "https://www.terminalworks.com/downloads/tsprint/TSPrint_client.exe"
-$destination = "$workdir\TSprint.exe"
-Invoke-WebRequest $source -OutFile $destination
-send-osnotification -body 'Installing TS Print' -Title 'Network Associates'
-.\tsprint.exe /silent
+echo y|winget install --id TerminalWorks.TSPrintClient --silent
 start-sleep -seconds 5
 Clear-Host
 send-osnotification -body 'Downloading NetTime' -Title 'Network Associates'
