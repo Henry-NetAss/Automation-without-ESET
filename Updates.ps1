@@ -24,7 +24,7 @@ function UpdateOS(){
 
     $Result = $Installer.Install()
 
-    If ($Result.rebootRequired) { shutdown.exe /t 0 /r }
+    If ($Result.rebootRequired) { shutdown.exe /t 30 /r }
 }
 
 UpdateOS
