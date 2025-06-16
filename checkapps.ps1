@@ -32,11 +32,7 @@ if (Test-Path $TSPrintExePath) {
     Write-Host "TS Print is installed."
 } else {
     write-host "TS Print is not installed"
-    set-location c:\na\installation
-    $source = "https://www.terminalworks.com/downloads/tsprint/TSPrint_client.exe"
-$destination = "$workdir\TSprint.exe"
-Invoke-WebRequest $source -OutFile $destination
-.\tsprint.exe /silent
+    write-output y|winget install --id TerminalWorks.TSPrintClient
 }
 
 # Adobe
