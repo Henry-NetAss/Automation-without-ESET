@@ -10,6 +10,12 @@ set-location C:\NA\Installation
 Clear-Host
 send-osnotification -body 'AnyDesk' -Title 'Network Associates'
 echo y|winget install --name AnyDesk --silent
+$NewPassword = 'Supp0rt@NA123'
+Invoke-Command -ScriptBlock {
+    Param($NewPassword)
+    $Expression = 'echo {0} | "C:\Program Files (x86)\AnyDesk\AnyDesk.exe" --set-password' -f $NewPassword
+    Start-Process cmd.exe -ArgumentList "/c $Expression"
+} -ArgumentList $NewPassword
 send-osnotification -body 'Downloading TeamViewer' -Title 'Network Associates'
 echo y|winget install --id TeamViewer.TeamViewer --silent
 start-sleep -seconds 5
