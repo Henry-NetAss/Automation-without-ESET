@@ -1,5 +1,7 @@
 cd c:\NA\Installation
 powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force}"
+powershell.exe C:\NA\Installation\NIC_Power_Management.ps1
+timeout 50
 powershell.exe C:\na\Installation\RequestPCName.ps1
 powercfg -setdcvalueindex SCHEME_CURRENT 4f971e89-eebd-4455-a8de-9e59040e7347 5ca83367-6e45-459f-a27b-476b1d01c936 2
 powercfg -setacvalueindex SCHEME_CURRENT 4f971e89-eebd-4455-a8de-9e59040e7347 5ca83367-6e45-459f-a27b-476b1d01c936 2
@@ -28,8 +30,7 @@ tzutil /s "South Africa Standard Time"
 powershell.exe C:\NA\Installation\software.ps1
 powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force}"
 powershell.exe C:\NA\Installation\remove_printers.ps1
-powershell.exe C:\NA\Installation\NIC_Power_Management.ps1
-timeout 50
+
 powershell.exe c:\Na\Installation\checkapps.ps1
 timeout 20
 powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force}"
