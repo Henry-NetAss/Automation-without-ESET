@@ -18,7 +18,7 @@ powershell.exe c:\na\installation\winget_enable.ps1
 powershell.exe c:\na\installation\VisualFX.ps1
 powershell.exe C:\NA\Installation\UAC_Disable.ps1
 powershell.exe C:\NA\Installation\DarkMode.ps1
-powershell.exe C:\NA\Installation\Region_Settings.ps1
+
 powershell.exe C:\NA\Installation\Disable_Fast_Boot.ps1
 powershell.exe C:\NA\Installation\RemoveCapabilities.ps1
 powershell.exe C:\NA\Installation\Removefeatures.ps1
@@ -38,5 +38,6 @@ powershell.exe c:\na\installation\taskbaricons.ps1
 timeout 5
 Powershell.exe c:\na\installation\PCName.ps1
 powershell.exe c:\na\Installation\DisableSearchBoxSuggestion.ps1
+powershell.exe C:\NA\Installation\Region_Settings.ps1
 powershell.exe C:\NA\Installation\updates.ps1
 exit
