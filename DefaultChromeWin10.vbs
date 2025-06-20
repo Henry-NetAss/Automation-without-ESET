@@ -2,7 +2,7 @@ Set WshShell = WScript.CreateObject("WScript.Shell")
 
 ' Open the default settings window
 WshShell.Run "%windir%\system32\control.exe /name Microsoft.DefaultPrograms /page pageDefaultProgram\pageAdvancedSettings?pszAppName=google%20chrome"
-WScript.Sleep 15000 ' Wait until open (adjust if necessary)
+WScript.Sleep 20000 ' Wait until open (adjust if necessary)
 
 ' Adjust number of tabs until you reach the browser choice setting
 WshShell.SendKeys "{TAB}" 
