@@ -48,3 +48,6 @@ echo y|winget install --id 9NKSQGP7F2NH
 send-osnotification -body 'Microsoft Office' -Title 'Network Associates'
 echo y|winget install --id Microsoft.Office
 start-sleep -seconds 4
+echo y|winget uninstall --id Microsoft.Onedrive
+start-sleep -seconds 10
+echo y|winget install --id Microsoft.Onedrive
